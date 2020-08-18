@@ -1,0 +1,15 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: jaylabs
+  namespace: development
+  labels:
+    app: jaylabs
+spec:
+  selector:
+    app: jaylabs
+  type: ClusterIP
+  ports:
+  - protocol: TCP
+    name: http
+    port: 8080
