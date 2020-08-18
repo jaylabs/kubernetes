@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: jaylabs
+  namespace: development
+  annotations:
+    kubernetes.io/ingress.class: "ingress-jaylabs"
+spec:
+  rules:
+  - host: app.dev.jaylabs.io
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: jaylabs
+          servicePort: 8080
