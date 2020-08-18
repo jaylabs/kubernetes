@@ -1,8 +1,0 @@
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: jaylabs
-  namespace: development
-data:
-  DATABASE_NAME: "jaylabs_db"
-  DATABASE_URL: "jdbc:mysql://url:3306"
